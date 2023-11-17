@@ -80,7 +80,7 @@ contents.each do |row|
   save_thank_you_letter(id, form_letter)
 
   phone = clean_phone(row[:homephone])
-
+  puts "#{name}: #{phone}"
   register_date = clean_date(row[:regdate])
   register_count[register_date.strftime('%A')] += 1
 end
